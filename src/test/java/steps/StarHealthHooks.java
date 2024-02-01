@@ -12,6 +12,7 @@ public class StarHealthHooks {
 	
 	@BeforeAll
 	public static void openBrowser() {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\lenovo\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
 		driver= new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
